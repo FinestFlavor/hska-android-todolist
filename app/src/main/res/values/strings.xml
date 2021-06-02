@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Todolist</string>
+    <string name="item_note_body">Item Note Body Text</string>
+    <string name="item_note_header">item_note_header_text</string>
+    <string name="create_note_header">Note Headline</string>
+    <string name="create_note_body">Note Bodytext</string>
+    <string name="menu_item_create_note">add</string>
+    <string name="menu_item_save_note">save</string>
+    <string name="detail_note_header">Detail Note Header</string>
+    <string name="detail_note_body">Detail Note Body</string>
+    <string name="detail_note_timestamp">Created at</string>
+    <string name="menu_item_delete_note">Delete Note</string>
+</resources>

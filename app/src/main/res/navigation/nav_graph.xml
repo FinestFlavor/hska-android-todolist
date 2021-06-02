@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destListNoteFragment">
+
+    <fragment
+        android:id="@+id/destListNoteFragment"
+        android:name="de.hska.student.mvvm.todolist.view.ListNoteFragment"
+        android:label="ListNoteFragment"
+        tools:layout="@layout/fragment_list_note">
+        <action
+            android:id="@+id/action_listNoteFragment_to_createNoteFragment"
+            app:destination="@id/destCreateNoteFragment" />
+        <action
+            android:id="@+id/action_destListNoteFragment_to_detailNoteFragment"
+            app:destination="@id/destDetailNoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destCreateNoteFragment"
+        android:name="de.hska.student.mvvm.todolist.view.CreateNoteFragment"
+        android:label="CreateNoteFragment"
+        tools:layout="@layout/fragment_create_note" >
+        <action
+            android:id="@+id/action_createNoteFragment_to_listNoteFragment"
+            app:destination="@id/destListNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destDetailNoteFragment"
+        android:name="de.hska.student.mvvm.todolist.view.DetailNoteFragment"
+        android:label="fragment_detail_note"
+        tools:layout="@layout/fragment_detail_note" >
+        <argument
+            android:name="note"
+            app:argType="de.hska.student.mvvm.todolist.model.Note" />
+        <action
+            android:id="@+id/action_destDetailNoteFragment_to_destListNoteFragment"
+            app:destination="@id/destListNoteFragment" />
+    </fragment>
+</navigation>
