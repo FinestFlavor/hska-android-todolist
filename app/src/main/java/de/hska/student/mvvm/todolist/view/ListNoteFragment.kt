@@ -13,6 +13,7 @@ import de.hska.student.mvvm.todolist.adapter.ListNoteAdapter
 import de.hska.student.mvvm.todolist.databinding.FragmentListNoteBinding
 import de.hska.student.mvvm.todolist.model.Note
 import de.hska.student.mvvm.todolist.viewmodel.ListNoteViewModel
+import java.util.*
 
 private const val LOG_TAG = "ListNoteFragment"
 
@@ -20,8 +21,9 @@ private const val LOG_TAG = "ListNoteFragment"
 class ListNoteFragment : Fragment() {
 
     private lateinit var binding: FragmentListNoteBinding
-    private val listAdapter = ListNoteAdapter(::onItemClick)
     private val viewModel: ListNoteViewModel by viewModels()
+    private val listAdapter = ListNoteAdapter(::onItemClick)
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,7 +46,9 @@ class ListNoteFragment : Fragment() {
                 setHasFixedSize(true)
             }
         }
-        viewModel.notes.observe(viewLifecycleOwner, listAdapter::submitList)
+        viewModel.notes.observe(
+            viewLifecycleOwner,
+            { listAdapter.submitList(it.sortedByDescending(Note::timestamp)) })
     }
 
     private fun onItemClick(note: Note) {

@@ -26,8 +26,6 @@ class CreateNoteViewModel @Inject constructor(private val dao: InMemoryDao) : Vi
 //        dao.insert(note)
 //        datasource.inMemoryDao().insert(note)
         dao.insert(note)
-        Log.d(LOG_TAG, "getAll: $note")
-        dao.getAll()
     }
 
 }

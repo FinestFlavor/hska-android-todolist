@@ -6,8 +6,8 @@ Der Nutzer soll darin neue Notizen erstellen, ansehen und löschen können.
 Das Bestehen der Aufgabe gewährt einen Bonus von 20% auf die Klausur.
 Sie dürfen die Aufgabe in einer Gruppe von bis zu drei Studierenden lösen.
 Schicken Sie Ihre Abgabe an adrian.woerle@hs-karlsruhe.de und alexandros.koufatzis@hs-
-karlsruhe.de in Form einer zip-Datei oder als Link zu Ihrem Github-Repo. Schreiben Sie außerdem die
-Matrikelnummern und Namen aller Gruppenteilnehmer in der Email dazu.
+karlsruhe.de in Form einer zip-Datei oder als Link zu Ihrem Github-Repo.
+Schreiben Sie außerdem die Matrikelnummern und Namen aller Gruppenteilnehmer in der Email dazu.
 Sie können innerhalb der Gruppe Ihre App bis zu zweimal abgeben. Wenn sie beim ersten Mal die
 Kriterien nicht erfüllt, teilen wir Ihnen das mit und Sie haben einen zweiten Versuch.
 Sie müssen das Projekt nur abgeben, nicht präsentieren.
