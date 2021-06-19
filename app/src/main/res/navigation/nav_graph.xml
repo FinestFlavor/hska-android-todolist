@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/destListNoteFragment"
         android:name="de.hska.student.mvvm.todolist.view.ListNoteFragment"
-        android:label="ListNoteFragment"
+        android:label="@string/ListNoteFragment"
         tools:layout="@layout/fragment_list_note">
         <action
             android:id="@+id/action_listNoteFragment_to_createNoteFragment"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/destCreateNoteFragment"
         android:name="de.hska.student.mvvm.todolist.view.CreateNoteFragment"
-        android:label="CreateNoteFragment"
+        android:label="@string/CreateNoteFragment"
         tools:layout="@layout/fragment_create_note" >
         <action
             android:id="@+id/action_createNoteFragment_to_listNoteFragment"
@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/destDetailNoteFragment"
         android:name="de.hska.student.mvvm.todolist.view.DetailNoteFragment"
-        android:label="fragment_detail_note"
+        android:label="@string/fragment_detail_note"
         tools:layout="@layout/fragment_detail_note" >
         <argument
             android:name="note"

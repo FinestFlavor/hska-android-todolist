@@ -59,9 +59,14 @@ class ListNoteFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         Log.d(LOG_TAG, "onOptionsItemSelected")
-        val dest = ListNoteFragmentDirections.actionListNoteFragmentToCreateNoteFragment()
-        findNavController().navigate(dest)
-        return true
+        return when (item.itemId) {
+            R.id.action_create_note -> {
+                val dest = ListNoteFragmentDirections.actionListNoteFragmentToCreateNoteFragment()
+                findNavController().navigate(dest)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

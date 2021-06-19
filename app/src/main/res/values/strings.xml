@@ -10,4 +10,7 @@
     <string name="detail_note_body">Detail Note Body</string>
     <string name="detail_note_timestamp">Created at</string>
     <string name="menu_item_delete_note">Delete Note</string>
+    <string name="ListNoteFragment">Todo</string>
+    <string name="CreateNoteFragment">Create Note</string>
+    <string name="fragment_detail_note">"Details "</string>
 </resources>

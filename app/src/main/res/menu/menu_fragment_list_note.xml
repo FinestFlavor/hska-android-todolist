@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/action_create_note_dest"
+        android:id="@+id/action_create_note"
         android:icon="@drawable/ic_add_24"
         android:title="@string/menu_item_create_note"
         app:showAsAction="always" />
