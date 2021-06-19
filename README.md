@@ -1,3 +1,9 @@
+An diesem Projekt haben gearbeitet:
+- Abel
+- Bergmaier
+- Bruder
+
+
 # Bonusaufgabe App-Programmierung SS21
 
 ## Aufgabe
